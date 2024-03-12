@@ -129,7 +129,7 @@ const ListProduct = () => {
                 <p className='paragraph'>₹{product.old_price}</p>
                 <p className='paragraph'>₹{product.new_price}</p>
                 <p className='paragraph'>{product.category}</p>
-                <img onClick={displayWarning} src="https://cdn-icons-png.flaticon.com/128/594/594598.png" alt="" className="listproduct-remove-icon" />
+                <img onClick={() => removeProduct(product.id)} src="https://cdn-icons-png.flaticon.com/128/594/594598.png" alt="" className="listproduct-remove-icon" />
               </div>
               <hr />
             </React.Fragment>
