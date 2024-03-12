@@ -71,7 +71,7 @@ const Addproduct = () => {
 
     // This part of the code sends the selected image file to the server using a POST request. Once the server processes the request, 
     // it sends back a response, which is then parsed as JSON, and the data from the response is stored for further use in the responseData variable.
-    await fetch('http://localhost:4000/upload', {
+    await fetch('https://rakeshmohantarai-shopify-backend-e.onrender.com/upload', {
       method: 'POST', // HTTP POST method
       headers: {
         Accept: 'application/json', // Accepting JSON response
@@ -94,7 +94,7 @@ const Addproduct = () => {
       // Here now all the image attachment to the product is completed, now product have all the data like name, image, price ... // 
 
       // Adding product details to database
-      await fetch('http://localhost:4000/addproduct', {
+      await fetch('https://rakeshmohantarai-shopify-backend-e.onrender.com/addproduct', {
         method: 'POST', // HTTP POST method
         headers: {
           Accept: 'application/json', // Accepting JSON response
